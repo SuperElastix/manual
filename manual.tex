@@ -2795,7 +2795,7 @@ An example of this can be found in the directory
 
 \subsubsection{Introduction}
 
-\elastix\ also offers the possibility to be used as dynamic or
+\elastix\ also offers the possibility to be used as 
 static linked library. This offers the possibility to integrate its
 functionality in your own software, without having to call the
 external \elastix\ executable. The latter namely has the downside
@@ -2826,12 +2826,9 @@ using the -p option of the \elastix\ executable multiple times).
 \item Using \transformix\ to transform an image.
 \end{itemize}
 
-\subsubsection{Building \elastix\ as a static or dynamic library}
+\subsubsection{Building \elastix\ as a static library}
 
-To build \elastix\ as a library you have to disable the
-\texttt{ELASTIX\_BUILD\_EXECUTABLE} option in CMake. With this
-option disabled a build project for a static library will be
-created. Note that \elastix\ cannot be built as a dynamic library:
+\elastix\ cannot be built as a dynamic library:
 The CMake option \texttt{BUILD\_SHARED\_LIBS} should be \texttt{OFF},
 when building \elastix.
 
